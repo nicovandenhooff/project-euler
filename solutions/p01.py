@@ -5,15 +5,15 @@
 # Problem: https://projecteuler.net/problem=1
 
 
-def sum_multiples(num1, num2, upper_limit):
+def sum_multiples(n1, n2, upper_limit):
     """Calculates the sum from 0 to an upper limit n for all
     multiples of two numbers.
 
     Parameters
     ----------
-    num1 : int
+    n1 : int
         The first multiple.
-    num2 : int
+    n2 : int
         The second multiple.
     upper_limit : int
         The upper limit to stop the summation at.
@@ -26,18 +26,10 @@ def sum_multiples(num1, num2, upper_limit):
     """
     total = 0
 
-    for num in range(upper_limit):
-        # add to total if divisible by both numbers
-        if num % num1 == 0 and num % num2 == 0:
-            total += num
-
-        # add to total if only divisible by first number
-        elif num % num1 == 0:
-            total += num
-
-        # add to total if only divisible by second number
-        elif num % num2 == 0:
-            total += num
+    for i in range(upper_limit):
+        # check for multiples
+        if i % n1 == 0 or i % n2 == 0:
+            total += i
 
     return total
 

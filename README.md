@@ -1,9 +1,13 @@
 # Project Euler
-A repository that contains my solutions to a selection of project Euler problems, written in Python.  Some solutions make use of
-NumPy.
 
-## Data
-Contains any files required for a given solution.
+A repository that contains my solutions to a selection of [Project Euler](https://projecteuler.net/) problems, written in Python.  
+
+As I'm in the field of data science, I opt to try to use [NumPy](https://numpy.org/) as much as possible in my solutions.
 
 ## Solutions
-Contains python files for each solution
+
+This folder contains python files for each solution.
+
+## Data
+
+This folder contains any files required for a given solution.
